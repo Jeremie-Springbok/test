@@ -34,13 +34,13 @@
 7. Local - Stop SSH agent: `fly agent stop && fly wg remove`
 8. Fly - Restart: `fly apps restart $PROJECT_NAME`
 
-## Delete App
-
-1. Fly - Authentification: `fly auth login`
-2. Fly - Deletion: `fly apps destroy $PROJECT_NAME`
-
 ## Extend volume
 
 1. Fly - Authentification: `fly auth login`
 2. Fly - Identify volume: `fly volumes list`
 3. Fly - Extend volume: `fly volumes extend $VOLUME_ID --size $SIZE`
+
+## Delete App
+
+1. Fly - Authentification: `fly auth login`
+2. Fly - Deletion: `fly apps destroy $PROJECT_NAME`
